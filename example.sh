@@ -5,7 +5,7 @@ if [ "$?" != "0" ]; then
   exit $?
 fi
 
-hciconfig hci1 up
+hciconfig hci0 up
 hcitool cmd 0x08 0x000a 00
 hcitool cmd 0x08 0x0008 $msg
 hcitool cmd 0x08 0x000a 01
