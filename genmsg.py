@@ -3,12 +3,12 @@ import hashlib
 import sys
 
 if len(sys.argv) != 3:
-    print("Usage: %s domain id id id id id id" % sys.argv[0])
-    print("\nID is 6 two hex digit ")
+    print("Usage: %s domain id" % sys.argv[0])
+    print("\nID is any 6 characters.")
     sys.exit(1)
 
 if len(sys.argv[2]) != 6:
-    print("A 6 digit instance ID is required")
+    print("A 6 character instance ID is required")
     sys.exit(2)
 
 domain = sys.argv[1]
